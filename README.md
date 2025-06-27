@@ -35,6 +35,10 @@ score = frequency / (currentTime - lastUsedTime + 1)
 This balances both **recency and frequency**, similar to a hybrid between LRU and LFU, with tunable logic for smarter decisions.
 
 ---
+### Data Structure Visualization
+
+![Data Structure](Assets/Screenshot%202025-06-27%20153311.png)
+
 
 ## 🧾 Example Usage
 
@@ -50,6 +54,12 @@ cache.put(4, 400);    // Cache full → evict based on lowest score
 cache.get(2);         // Key 2 might be evicted, will return -1 if so
 ```
 
-Made by Hari Balan K
+### Output Example 1  
+Initial insertions and access operations:
+
+![Output ](Assets/Screenshot%202025-06-27%20152542.png)
+![Output ](Assets/Screenshot%202025-06-27%20152847.png)
+
+## Made by Hari Balan K
 
 
