@@ -60,6 +60,16 @@ Initial insertions and access operations:
 ![Output ](Assets/Screenshot%202025-06-27%20152542.png)
 ![Output ](Assets/Screenshot%202025-06-27%20152847.png)
 
+| Function            | Time Complexity          | Space Complexity | Description                                            |
+| ------------------- | ------------------------ | ---------------- | ------------------------------------------------------ |
+| `NeuroCache(int)`   | O(1)                     | O(1)             | Initializes cache capacity and timestamp.              |
+| `get(int key)`      | O(1) average             | O(1)             | Retrieves value and updates metadata using a hash map. |
+| `put(int key, int)` | O(1) average, O(n) worst | O(1)             | Adds/updates key. Triggers eviction if cache is full.  |
+| `evict()`           | O(n)                     | O(1)             | Scans entries to evict one with the lowest score.      |
+| `computeScore()`    | O(1)                     | O(1)             | Calculates eviction score from frequency and recency.  |
+| `printCache()`      | O(n)                     | O(1)             | Displays all key-value pairs in the cache.             |
+
+
 ## Made by Hari Balan K
 
 
